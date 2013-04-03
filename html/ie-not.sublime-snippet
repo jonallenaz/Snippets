@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+<!--[if !IE]> -->
+${1:<style>
+	//${2:For browsers other than IE}
+	$3
+</style>}
+<![endif]-->
+$0
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ie_conditional</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

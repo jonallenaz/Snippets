@@ -1,0 +1,51 @@
+<snippet>
+	<content><![CDATA[
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id='outerwrapper' style='width:984px'>
+	<div id='innerwrapper'>
+		<div id="div__header">
+			<table border='0' cellspacing='0' cellpadding='0' width='100%'>
+			<tr>
+				<!-- Start Logo and Tabs -->
+				<td id="header">
+
+				</td>
+				<!-- End Logo and Tabs -->
+			</tr>
+			</table>
+		</div>
+
+		<div id='div__title' style='margin: 0px;'></div>
+		<div id='div__label' class='scrollarea' style='margin: 0px; overflow:hidden;'></div>
+		
+		<div id="div__body">
+			<table width='100%' border='0' cellspacing='0' cellpadding='2'>
+			<tr valign='top'>
+				<!-- start template: - Homepage -->
+				<td width="100%">
+
+				</td>
+				<!-- end template: - Homepage -->
+			</tr>
+			</table>
+		</div>
+		<div id="div__footer">
+			<!-- start footer -->
+
+			<!-- end footer -->
+		</div>
+	</div>
+</div>
+</body>
+</html>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>netsuite</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

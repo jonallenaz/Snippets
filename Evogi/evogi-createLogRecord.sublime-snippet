@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+createLogRecord(${1:StatusCode}, '${2:Message} - Script: ${3:script.js}', '${4:RecordType}', ${5:RecordID});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>createLogRecord</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
