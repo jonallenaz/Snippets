@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-${1:filters}.push( new nlobjSearchFilter('${2:field}', '${3:join}', '${4:operator}', '${5:value}') );
+var ${1:results} = nlapiSearchRecord('${2:record_type}', '${3:saved_search}', ${4:filters}, ${5:columns});
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>nsfilter</tabTrigger>
+	<!-- <tabTrigger>hello</tabTrigger> -->
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
