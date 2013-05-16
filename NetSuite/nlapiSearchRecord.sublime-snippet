@@ -1,9 +1,23 @@
 <snippet>
 	<content><![CDATA[
-var ${1:results} = nlapiSearchRecord('${2:record_type}', '${3:saved_search}', ${4:filters}, ${5:columns});
+var ${1:filters} = [];
+${1:filters}.push( new nlobjSearchFilter('${2:field}', '${3:join}', '${4:operator}', '${5:value}') );
+var ${6:columns} = [];
+${6:columns}.push( new nlobjSearchColumn('internalid').setSort(false) );
+${6:columns}.push( new nlobjSearchColumn('${7:field}','${8:join}','${9:summary}') );
+var ${10:searchresults} = nlapiSearchRecord('${11:record_type}', '${12:saved_search}', ${1:filters}, ${6:columns});
+while(${10:searchresults}){
+	var ${13:internalid}
+	for(var ${14:i} = 0; ${10:searchresults} && ${14:i} < ${10:searchresults}.lenght; ${14:i}++){
+		${13:internalid} = ${10:searchresults}[${14:i}].getId();
+
+	}
+	${1:filters}.push( new nlobjSearchFilter('internalidnumber', null, 'greaterthan', ${13:internalid}) );
+	${10:searchresults} = nlapiSearchRecord('${11:record_type}', '${12:saved_search}', ${1:filters}, ${6:columns});
+}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<!-- <tabTrigger>hello</tabTrigger> -->
+	<tabTrigger>nlapiSearchRecord</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

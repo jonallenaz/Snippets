@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+var ${1:searchresults} = nlapiSearchRecord('${2:record_type}', '${3:saved_search}', ${4:filters}, ${5:columns});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>nlapiSearchRecordShort</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
