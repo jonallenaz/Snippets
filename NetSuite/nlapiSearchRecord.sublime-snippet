@@ -8,7 +8,7 @@ ${6:columns}.push( new nlobjSearchColumn('${7:field}','${8:join}','${9:summary}'
 var ${10:searchresults} = nlapiSearchRecord('${11:record_type}', '${12:saved_search}', ${1:filters}, ${6:columns});
 while(${10:searchresults}){
 	var ${13:internalid};
-	for(var ${14:i} = 0; ${10:searchresults} && ${14:i} < ${10:searchresults}.lenght; ${14:i}++){
+	for(var ${14:i} = 0; ${10:searchresults} && ${14:i} < ${10:searchresults}.length; ${14:i}++){
 		${13:internalid} = ${10:searchresults}[${14:i}].getId();
 
 	}
